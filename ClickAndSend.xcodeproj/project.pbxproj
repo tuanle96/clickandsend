@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1749987820230A8300E98F19 /* Extensions+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1749986C20230A8300E98F19 /* Extensions+UINavigationController.swift */; };
+		1749988120230A8300E98F19 /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1749987520230A8300E98F19 /* Extensions+UIViewController.swift */; };
+		177490832021ADEF000793F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177490822021ADEF000793F8 /* AppDelegate.swift */; };
+		177490882021ADEF000793F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177490862021ADEF000793F8 /* Main.storyboard */; };
+		1774908A2021ADEF000793F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177490892021ADEF000793F8 /* Assets.xcassets */; };
+		1774908D2021ADEF000793F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1774908B2021ADEF000793F8 /* LaunchScreen.storyboard */; };
+		177490952021AF04000793F8 /* SliderMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177490942021AF04000793F8 /* SliderMenuVC.swift */; };
+		17B3A54B2022B198003AE0C7 /* TemplateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3A54A2022B198003AE0C7 /* TemplateObject.swift */; };
+		17B3A54F2022E01E003AE0C7 /* template-1.html in Resources */ = {isa = PBXBuildFile; fileRef = 17B3A54D2022E01E003AE0C7 /* template-1.html */; };
+		17B3A5502022E01E003AE0C7 /* template-2.html in Resources */ = {isa = PBXBuildFile; fileRef = 17B3A54E2022E01E003AE0C7 /* template-2.html */; };
+		17B3A5522022E8CF003AE0C7 /* PersonalizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3A5512022E8CF003AE0C7 /* PersonalizationVC.swift */; };
+		17B9A7F22021B00A00D63071 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B9A7F12021B00A00D63071 /* MainVC.swift */; };
+		17B9A7F52021C9B900D63071 /* TemplateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B9A7F32021C9B900D63071 /* TemplateCell.swift */; };
+		17B9A7F62021C9B900D63071 /* TemplateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17B9A7F42021C9B900D63071 /* TemplateCell.xib */; };
+		75CD9A4CB428E161F47AA7A5 /* Pods_ClickAndSend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1967C54BC220D6A47E63C88F /* Pods_ClickAndSend.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1749986C20230A8300E98F19 /* Extensions+UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UINavigationController.swift"; sourceTree = "<group>"; };
+		1749987520230A8300E98F19 /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIViewController.swift"; sourceTree = "<group>"; };
+		1774907F2021ADEF000793F8 /* ClickAndSend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickAndSend.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		177490822021ADEF000793F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		177490872021ADEF000793F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		177490892021ADEF000793F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1774908C2021ADEF000793F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1774908E2021ADEF000793F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177490942021AF04000793F8 /* SliderMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderMenuVC.swift; sourceTree = "<group>"; };
+		17B3A54A2022B198003AE0C7 /* TemplateObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateObject.swift; sourceTree = "<group>"; };
+		17B3A54D2022E01E003AE0C7 /* template-1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "template-1.html"; sourceTree = "<group>"; };
+		17B3A54E2022E01E003AE0C7 /* template-2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "template-2.html"; sourceTree = "<group>"; };
+		17B3A5512022E8CF003AE0C7 /* PersonalizationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalizationVC.swift; sourceTree = "<group>"; };
+		17B9A7F12021B00A00D63071 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		17B9A7F32021C9B900D63071 /* TemplateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateCell.swift; sourceTree = "<group>"; };
+		17B9A7F42021C9B900D63071 /* TemplateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemplateCell.xib; sourceTree = "<group>"; };
+		1967C54BC220D6A47E63C88F /* Pods_ClickAndSend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickAndSend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B016DC664FAFD5A688CB9A6 /* Pods-ClickAndSend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickAndSend.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClickAndSend/Pods-ClickAndSend.debug.xcconfig"; sourceTree = "<group>"; };
+		94E27D510283D5D882D4AC56 /* Pods-ClickAndSend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickAndSend.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClickAndSend/Pods-ClickAndSend.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1774907C2021ADEF000793F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CD9A4CB428E161F47AA7A5 /* Pods_ClickAndSend.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1749986B20230A8300E98F19 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1749986C20230A8300E98F19 /* Extensions+UINavigationController.swift */,
+				1749987520230A8300E98F19 /* Extensions+UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		177490762021ADEF000793F8 = {
+			isa = PBXGroup;
+			children = (
+				177490812021ADEF000793F8 /* ClickAndSend */,
+				177490802021ADEF000793F8 /* Products */,
+				23180EF8A771282ACC2EC6C5 /* Pods */,
+				ADFAA58A5CC1B9D36CE1FCEF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		177490802021ADEF000793F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1774907F2021ADEF000793F8 /* ClickAndSend.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		177490812021ADEF000793F8 /* ClickAndSend */ = {
+			isa = PBXGroup;
+			children = (
+				1749986B20230A8300E98F19 /* Extensions */,
+				17B3A54C2022DFE4003AE0C7 /* Resources */,
+				17B3A5492022B187003AE0C7 /* Objects */,
+				177490822021ADEF000793F8 /* AppDelegate.swift */,
+				177490862021ADEF000793F8 /* Main.storyboard */,
+				177490892021ADEF000793F8 /* Assets.xcassets */,
+				1774908B2021ADEF000793F8 /* LaunchScreen.storyboard */,
+				1774908E2021ADEF000793F8 /* Info.plist */,
+				177490942021AF04000793F8 /* SliderMenuVC.swift */,
+				17B9A7F12021B00A00D63071 /* MainVC.swift */,
+				17B9A7F32021C9B900D63071 /* TemplateCell.swift */,
+				17B9A7F42021C9B900D63071 /* TemplateCell.xib */,
+				17B3A5512022E8CF003AE0C7 /* PersonalizationVC.swift */,
+			);
+			path = ClickAndSend;
+			sourceTree = "<group>";
+		};
+		17B3A5492022B187003AE0C7 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				17B3A54A2022B198003AE0C7 /* TemplateObject.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		17B3A54C2022DFE4003AE0C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				17B3A54D2022E01E003AE0C7 /* template-1.html */,
+				17B3A54E2022E01E003AE0C7 /* template-2.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		23180EF8A771282ACC2EC6C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B016DC664FAFD5A688CB9A6 /* Pods-ClickAndSend.debug.xcconfig */,
+				94E27D510283D5D882D4AC56 /* Pods-ClickAndSend.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ADFAA58A5CC1B9D36CE1FCEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1967C54BC220D6A47E63C88F /* Pods_ClickAndSend.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1774907E2021ADEF000793F8 /* ClickAndSend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177490912021ADEF000793F8 /* Build configuration list for PBXNativeTarget "ClickAndSend" */;
+			buildPhases = (
+				F8676C5EF1D6418660679B10 /* [CP] Check Pods Manifest.lock */,
+				1774907B2021ADEF000793F8 /* Sources */,
+				1774907C2021ADEF000793F8 /* Frameworks */,
+				1774907D2021ADEF000793F8 /* Resources */,
+				71D3F5C230937FF263EF11B4 /* [CP] Embed Pods Frameworks */,
+				E7820F69C670DD88063DBB45 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClickAndSend;
+			productName = ClickAndSend;
+			productReference = 1774907F2021ADEF000793F8 /* ClickAndSend.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		177490772021ADEF000793F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Lê Anh Tuấn";
+				TargetAttributes = {
+					1774907E2021ADEF000793F8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VGQU7EVXZV;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1774907A2021ADEF000793F8 /* Build configuration list for PBXProject "ClickAndSend" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 177490762021ADEF000793F8;
+			productRefGroup = 177490802021ADEF000793F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1774907E2021ADEF000793F8 /* ClickAndSend */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1774907D2021ADEF000793F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B3A54F2022E01E003AE0C7 /* template-1.html in Resources */,
+				1774908D2021ADEF000793F8 /* LaunchScreen.storyboard in Resources */,
+				17B9A7F62021C9B900D63071 /* TemplateCell.xib in Resources */,
+				1774908A2021ADEF000793F8 /* Assets.xcassets in Resources */,
+				177490882021ADEF000793F8 /* Main.storyboard in Resources */,
+				17B3A5502022E01E003AE0C7 /* template-2.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71D3F5C230937FF263EF11B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ClickAndSend/Pods-ClickAndSend-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickAndSend/Pods-ClickAndSend-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7820F69C670DD88063DBB45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClickAndSend/Pods-ClickAndSend-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8676C5EF1D6418660679B10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClickAndSend-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1774907B2021ADEF000793F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1749987820230A8300E98F19 /* Extensions+UINavigationController.swift in Sources */,
+				177490832021ADEF000793F8 /* AppDelegate.swift in Sources */,
+				17B3A5522022E8CF003AE0C7 /* PersonalizationVC.swift in Sources */,
+				17B3A54B2022B198003AE0C7 /* TemplateObject.swift in Sources */,
+				17B9A7F52021C9B900D63071 /* TemplateCell.swift in Sources */,
+				17B9A7F22021B00A00D63071 /* MainVC.swift in Sources */,
+				1749988120230A8300E98F19 /* Extensions+UIViewController.swift in Sources */,
+				177490952021AF04000793F8 /* SliderMenuVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		177490862021ADEF000793F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				177490872021ADEF000793F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1774908B2021ADEF000793F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1774908C2021ADEF000793F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1774908F2021ADEF000793F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		177490902021ADEF000793F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		177490922021ADEF000793F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B016DC664FAFD5A688CB9A6 /* Pods-ClickAndSend.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VGQU7EVXZV;
+				INFOPLIST_FILE = ClickAndSend/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anhtuan.ClickAndSend;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		177490932021ADEF000793F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E27D510283D5D882D4AC56 /* Pods-ClickAndSend.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VGQU7EVXZV;
+				INFOPLIST_FILE = ClickAndSend/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anhtuan.ClickAndSend;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1774907A2021ADEF000793F8 /* Build configuration list for PBXProject "ClickAndSend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1774908F2021ADEF000793F8 /* Debug */,
+				177490902021ADEF000793F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		177490912021ADEF000793F8 /* Build configuration list for PBXNativeTarget "ClickAndSend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177490922021ADEF000793F8 /* Debug */,
+				177490932021ADEF000793F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 177490772021ADEF000793F8 /* Project object */;
+}
