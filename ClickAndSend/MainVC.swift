@@ -50,7 +50,7 @@ class MainVC: UIViewController {
                 return
         }
        
-        self.templates.append(TemplateObject(name: "Hợp đồng hệ thống gửi đến bạn", subject: "HỢP ĐỒNG HỆ THỐNG GỬI ĐẾN BẠN @FULLNAME@", html: htmlString1))
+        self.templates.append(TemplateObject(name: "Hợp đồng hệ thống", subject: "HỢP ĐỒNG HỆ THỐNG GỬI ĐẾN BẠN @FULLNAME@", html: htmlString1))
         self.templates.append(TemplateObject(name: "Hợp đồng thuê phần mềm", subject: "HỢP ĐỒNG THUÊ PHẦN MỀM", html: htmlString2))
     }
     

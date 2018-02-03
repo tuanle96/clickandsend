@@ -70,22 +70,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pEw-O6-OP6">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IOR-P6-RZ8">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="650"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="550"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên đầy đủ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CFb-x6-NZI">
-                                                <rect key="frame" x="20" y="0.0" width="335" height="45"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CFb-x6-NZI" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                <rect key="frame" x="20" y="15" width="335" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="uOw-wE-9SV"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                        <color key="value" red="0.22013029310000001" green="0.68884722330000003" blue="0.96197825670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                        <color key="value" red="0.22013029310000001" green="0.68884722330000003" blue="0.96197825670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Full name"/>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OaO-gT-Oqg">
-                                                <rect key="frame" x="20" y="75" width="335" height="45"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OaO-gT-Oqg" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                <rect key="frame" x="20" y="80" width="335" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="npZ-4j-9Zz"/>
                                                     <constraint firstAttribute="height" constant="45" id="qHL-qY-GmL"/>
@@ -93,47 +102,87 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                        <color key="value" red="0.22013029310000001" green="0.68884722330000003" blue="0.96197825670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                        <color key="value" red="0.22013029310000001" green="0.68884722330000003" blue="0.96197825670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Email"/>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mkp-WT-6ye">
-                                                <rect key="frame" x="20" y="155" width="335" height="45"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mkp-WT-6ye" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                <rect key="frame" x="20" y="145" width="335" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="WsD-KF-RYW"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                        <color key="value" red="0.22013029310000001" green="0.68884722330000003" blue="0.96197825670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                        <color key="value" red="0.22013029310000001" green="0.68884722330000003" blue="0.96197825670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kdk-qR-bbS" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                <rect key="frame" x="20" y="210" width="335" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="BHG-qq-gon"/>
+                                                    <constraint firstAttribute="height" constant="45" id="tHw-Tm-kbc"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                        <color key="value" red="0.22013029310000001" green="0.68884722330000003" blue="0.96197825670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                        <color key="value" red="0.22013029310000001" green="0.68884722330000003" blue="0.96197825670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Phone Number"/>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="CFb-x6-NZI" firstAttribute="top" secondItem="IOR-P6-RZ8" secondAttribute="top" id="14m-1j-T26"/>
-                                            <constraint firstItem="OaO-gT-Oqg" firstAttribute="top" secondItem="CFb-x6-NZI" secondAttribute="bottom" constant="30" id="909-HU-Fs7"/>
+                                            <constraint firstItem="CFb-x6-NZI" firstAttribute="top" secondItem="IOR-P6-RZ8" secondAttribute="top" constant="15" id="14m-1j-T26"/>
+                                            <constraint firstItem="OaO-gT-Oqg" firstAttribute="top" secondItem="CFb-x6-NZI" secondAttribute="bottom" constant="20" id="909-HU-Fs7"/>
+                                            <constraint firstAttribute="trailing" secondItem="kdk-qR-bbS" secondAttribute="trailing" constant="20" id="Ggi-KO-mBW"/>
                                             <constraint firstAttribute="trailing" secondItem="OaO-gT-Oqg" secondAttribute="trailing" constant="20" id="N9M-I4-ML3"/>
                                             <constraint firstItem="Mkp-WT-6ye" firstAttribute="leading" secondItem="OaO-gT-Oqg" secondAttribute="leading" id="UST-bq-iYJ"/>
-                                            <constraint firstAttribute="height" constant="650" id="YQ0-rF-Hrd"/>
+                                            <constraint firstAttribute="height" constant="550" id="YQ0-rF-Hrd"/>
+                                            <constraint firstItem="kdk-qR-bbS" firstAttribute="top" secondItem="Mkp-WT-6ye" secondAttribute="bottom" constant="20" id="YQL-EL-riW"/>
+                                            <constraint firstItem="kdk-qR-bbS" firstAttribute="leading" secondItem="IOR-P6-RZ8" secondAttribute="leading" constant="20" id="dPK-sl-xwP"/>
                                             <constraint firstItem="CFb-x6-NZI" firstAttribute="leading" secondItem="IOR-P6-RZ8" secondAttribute="leading" constant="20" id="ew1-r1-Jot"/>
                                             <constraint firstItem="Mkp-WT-6ye" firstAttribute="trailing" secondItem="OaO-gT-Oqg" secondAttribute="trailing" id="mXs-dO-6eU"/>
                                             <constraint firstAttribute="trailing" secondItem="CFb-x6-NZI" secondAttribute="trailing" constant="20" id="pum-Bb-1c0"/>
                                             <constraint firstItem="OaO-gT-Oqg" firstAttribute="leading" secondItem="IOR-P6-RZ8" secondAttribute="leading" constant="20" id="qBv-QB-Xnn"/>
-                                            <constraint firstItem="Mkp-WT-6ye" firstAttribute="top" secondItem="OaO-gT-Oqg" secondAttribute="bottom" constant="35" id="zno-UF-gca"/>
+                                            <constraint firstItem="Mkp-WT-6ye" firstAttribute="top" secondItem="OaO-gT-Oqg" secondAttribute="bottom" constant="20" id="zno-UF-gca"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="IOR-P6-RZ8" secondAttribute="trailing" id="Jkh-zz-nvK"/>
-                                    <constraint firstItem="IOR-P6-RZ8" firstAttribute="leading" secondItem="pEw-O6-OP6" secondAttribute="leading" id="dew-Yo-GJD"/>
-                                    <constraint firstItem="IOR-P6-RZ8" firstAttribute="top" secondItem="pEw-O6-OP6" secondAttribute="top" id="hh9-4T-SEd"/>
-                                    <constraint firstAttribute="bottom" secondItem="IOR-P6-RZ8" secondAttribute="bottom" id="lJG-2Q-M9w"/>
+                                    <constraint firstAttribute="trailing" secondItem="IOR-P6-RZ8" secondAttribute="trailing" id="0A0-fm-CzL"/>
+                                    <constraint firstItem="IOR-P6-RZ8" firstAttribute="top" secondItem="pEw-O6-OP6" secondAttribute="top" id="HnE-AH-ElC"/>
+                                    <constraint firstAttribute="bottom" secondItem="IOR-P6-RZ8" secondAttribute="bottom" id="fLj-Nm-JCs"/>
+                                    <constraint firstItem="IOR-P6-RZ8" firstAttribute="leading" secondItem="pEw-O6-OP6" secondAttribute="leading" id="nVy-ko-foo"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="IOR-P6-RZ8" firstAttribute="width" secondItem="WRq-S1-baA" secondAttribute="width" id="549-Q9-FuG"/>
-                            <constraint firstItem="pEw-O6-OP6" firstAttribute="top" secondItem="HGb-T2-cCM" secondAttribute="bottom" id="9Bb-Bv-ygB"/>
-                            <constraint firstItem="0XD-Ob-WoK" firstAttribute="top" secondItem="pEw-O6-OP6" secondAttribute="bottom" id="Gy7-8W-AEZ"/>
-                            <constraint firstAttribute="trailing" secondItem="pEw-O6-OP6" secondAttribute="trailing" id="l6L-Rs-BiB"/>
-                            <constraint firstItem="pEw-O6-OP6" firstAttribute="leading" secondItem="WRq-S1-baA" secondAttribute="leading" id="qIJ-y8-2QA"/>
+                            <constraint firstAttribute="trailing" secondItem="pEw-O6-OP6" secondAttribute="trailing" id="D1O-Fb-qnl"/>
+                            <constraint firstItem="0XD-Ob-WoK" firstAttribute="top" secondItem="pEw-O6-OP6" secondAttribute="bottom" id="ZV1-t8-gvS"/>
+                            <constraint firstItem="pEw-O6-OP6" firstAttribute="top" secondItem="WRq-S1-baA" secondAttribute="top" id="d1f-rD-ZMA"/>
+                            <constraint firstItem="pEw-O6-OP6" firstAttribute="leading" secondItem="WRq-S1-baA" secondAttribute="leading" id="qV2-6n-x0V"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jlh-in-eNK">
@@ -152,11 +201,12 @@
                         <outlet property="txtEmail" destination="OaO-gT-Oqg" id="K6h-ll-fTJ"/>
                         <outlet property="txtFullName" destination="CFb-x6-NZI" id="d9v-1n-CIw"/>
                         <outlet property="txtPassword" destination="Mkp-WT-6ye" id="XEV-zl-JmK"/>
+                        <outlet property="txtPhoneNumber" destination="kdk-qR-bbS" id="bzi-ga-fqq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ia4-QR-aMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69.599999999999994" y="842.42878560719646"/>
+            <point key="canvasLocation" x="69.599999999999994" y="841.52923538230891"/>
         </scene>
         <!--Slider MenuVC-->
         <scene sceneID="u6W-Cq-cWk">

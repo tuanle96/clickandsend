@@ -7,4 +7,6 @@ target 'ClickAndSend' do
 
   # Pods for ClickAndSend
 #pod 'SlideMenuControllerSwift'
+pod 'SkyFloatingLabelTextField'
+pod 'Alamofire'
 end

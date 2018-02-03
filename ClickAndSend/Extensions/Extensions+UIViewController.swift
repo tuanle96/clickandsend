@@ -19,7 +19,7 @@ extension UIViewController {
                 alert.addAction(button)
             }
         } else {
-            alert.addAction(.init(title: "Okay", style: .default, handler: nil))
+            alert.addAction(.init(title: "Đồng ý", style: .default, handler: nil))
         }
         self.present(alert, animated: true, completion: nil)
     }

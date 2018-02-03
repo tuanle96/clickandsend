@@ -9,14 +9,19 @@
 import UIKit
 import Foundation
 import MessageUI
+import Alamofire
+import SkyFloatingLabelTextField
 
 class PersonalizationVC: UIViewController {
     
     var template: TemplateObject!
+    var isSMS: Bool = false
 
     @IBOutlet weak var txtFullName: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var txtPhoneNumber: SkyFloatingLabelTextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,11 +43,17 @@ class PersonalizationVC: UIViewController {
             
         }
     */
+        self.txtFullName.becomeFirstResponder()
         
         self.title = self.template.name
         
         if template.name.hasPrefix("Hợp đồng thuê phần mềm") {
             self.txtPassword.isHidden = true
+            
+            self.txtPhoneNumber.transform = CGAffineTransform(translationX: 0, y: -65)
+            
+        } else {
+            self.txtPhoneNumber.isHidden = true
         }
         
     }
@@ -94,12 +105,41 @@ class PersonalizationVC: UIViewController {
             }
             
         } else {
-            //show sent mail view controller
-            let mailVc = configuredMailComposeViewController(to: email, and: body)
             
-            if MFMailComposeViewController.canSendMail() {
-                self.present(mailVc, animated: true, completion: nil)
+            
+            if !self.txtPhoneNumber.hasText {
+                self.showAlert("Vui lòng nhập Số điện thoại", title: "Thông báo", buttons: nil)
+                return
             }
+            
+            guard let _ = self.txtPhoneNumber.text else {
+                return
+            }
+            
+            //ask to send sms
+            let yes = UIAlertAction(title: "Đồng ý", style: UIAlertActionStyle.default, handler: { (action) in
+                self.isSMS = true
+                
+                //show sent mail view controller
+                let mailVc = self.configuredMailComposeViewController(to: email, and: body)
+                
+                if MFMailComposeViewController.canSendMail() {
+                    self.present(mailVc, animated: true, completion: nil)
+                }
+            })
+            
+            let no = UIAlertAction(title: "Không", style: UIAlertActionStyle.destructive, handler: { (action) in
+                self.isSMS = false
+                
+                //show sent mail view controller
+                let mailVc = self.configuredMailComposeViewController(to: email, and: body)
+                
+                if MFMailComposeViewController.canSendMail() {
+                    self.present(mailVc, animated: true, completion: nil)
+                }
+            })
+            
+            self.showAlert("Bạn có muốn gửi email cùng với sms không?", title: "Thông báo", buttons: [yes, no])
         }
     }
 }
@@ -122,7 +162,62 @@ extension PersonalizationVC: MFMailComposeViewControllerDelegate {
     }
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        
+        switch result {
+        case .sent:
+            if self.isSMS {
+                if let phoneNumber = self.txtPhoneNumber.text, let email = self.txtEmail.text, let fullName = self.txtFullName.text {
+                    
+                    //replace email & full name
+                    let temp = self.template.sms.replacingOccurrences(of: "@EMAIL@", with: email)
+                    let newEntry = temp.replacingOccurrences(of: "@FULLNAME@", with: fullName)
+                    
+                    self.sendSMS(with: phoneNumber, and: newEntry)
+                }
+            }
+        default:
+            break
+        }
+        
+        
         controller.dismiss(animated: true, completion: nil)
         self.navigationController?.popToRootViewController(animated: true)
+    }
+}
+
+extension PersonalizationVC {
+    func sendSMS(with phoneNumber: String, and entry: String) {
+        let parameters: [String: Any] = [
+            "phoneNumber": phoneNumber,
+            "entry": entry
+        ]
+        
+        //http://35.201.241.250/api/sendSMS
+        
+        Alamofire.request("http://35.201.241.250/api/sendSMS", method: HTTPMethod.post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { (response) in
+            
+            guard let res = response.result.value as? [String: Any] else {
+                return
+            }
+            
+            if let error = res["error"] as? String {
+                
+                let alert = UIAlertController(title: "Thông báo", message: error, preferredStyle: UIAlertControllerStyle.alert)
+                let action = UIAlertAction(title: "Đã hiểu", style: UIAlertActionStyle.default, handler: nil)
+                alert.addAction(action)
+                
+                (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController?.present(alert, animated: true, completion: nil)
+                return
+            }
+            
+            if let _ = res["success"] as? String {
+                
+                let alert = UIAlertController(title: "Thông báo", message: "Gửi SMS thành công", preferredStyle: UIAlertControllerStyle.alert)
+                let action = UIAlertAction(title: "Đã hiểu", style: UIAlertActionStyle.default, handler: nil)
+                alert.addAction(action)
+                
+                (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController?.present(alert, animated: true, completion: nil)
+            }
+        }
     }
 }
